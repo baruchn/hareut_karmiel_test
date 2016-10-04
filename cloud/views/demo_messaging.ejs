@@ -1,0 +1,301 @@
+﻿
+<html lang="he">
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>מערכת שליחת הודעות</title>
+</head>
+<body dir="rtl">
+<div id="page">
+    <div id="pagetop">
+        <h1>מערכת להדגמה</h1>
+        <div class="links">
+            <ul>
+                <li><a href="demo_change_password">החלפת סיסמה</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="header">   </div>
+
+    <div id="main">
+    <div class="content">
+        <div class="main_top">
+            <h1>מערכת שליחת הודעות</h1>
+        </div>
+
+        <div class="main_body">
+            <br>
+            <p><%= message %></p>
+            <br>
+
+            <form method="post" action="/demo_messaging">
+                כותרת:<br>
+                <input name="message" style="width: 300px;" />
+                <br>
+                הודעה:<br>
+                <textarea name="url" rows="5" style="width: 300px;">http://www.napps.co.il</textarea>
+                <br>
+                <br>
+
+                <form name=myform action="" method=post>
+                    <br><br>
+                    <input type="checkbox" name="SelectAll" onClick="this.value=check(this.form.chk_group)" checked> כל בית הספר </input>
+                    <br><br>
+                    <table style="width:50%">
+                        <tr>
+                            <td>
+                            <div class="myCheckbox">
+                                <input type="checkbox" name="chk_group" id="check1" value="A1" checked>
+                                <label for="check1">א1</label>
+                            </div>
+                            </td>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="A2" checked>
+                                    <label for="check1">א2</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="A3" checked>
+                                    <label for="check1">א3</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="A4" checked>
+                                    <label for="check1">א4</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="A5" checked>
+                                    <label for="check1">א5</label>
+                                </div>
+                            </td>
+                            <!--<td><input type="checkbox" name="chk_group" value="A4">א4</td>
+                            <td><input type="checkbox" name="chk_group" value="A5">א5</td>-->
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="B1" checked>
+                                    <label for="check1">ב1</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="B2" checked>
+                                    <label for="check1">ב2</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="B3" checked>
+                                    <label for="check1">ב3</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="B4" checked>
+                                    <label for="check1">ב4</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="B5" checked>
+                                    <label for="check1">ב5</label>
+                                </div>
+                            </td>
+                            <!--<td><input type="checkbox" name="chk_group" value="B4">ב4</td>
+                            <td><input type="checkbox" name="chk_group" value="B5">ב5</td>-->
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="C1" checked>
+                                    <label for="check1">ג1</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="C2" checked>
+                                    <label for="check1">ג2</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="C3" checked>
+                                    <label for="check1">ג3</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="C4" checked>
+                                    <label for="check1">ג4</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="C5" checked>
+                                    <label for="check1">ג5</label>
+                                </div>
+                            </td>
+                            <!--<td><input type="checkbox" name="chk_group" value="C4">ג4</td>
+                            <td><input type="checkbox" name="chk_group" value="C5">ג5</td>-->
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="D1" checked>
+                                    <label for="check1">ד1</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="D2" checked>
+                                    <label for="check1">ד2</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="D3" checked>
+                                    <label for="check1">ד3</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="D4" checked>
+                                    <label for="check1">ד4</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="D5" checked>
+                                    <label for="check1">ד5</label>
+                                </div>
+                            </td>
+                            <!--<td><input type="checkbox" name="chk_group" value="D4">ד4</td>
+                            <td><input type="checkbox" name="chk_group" value="D5">ד5</td>-->
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="E1" checked>
+                                    <label for="check1">ה1</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="E2" checked>
+                                    <label for="check1">ה2</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="E3" checked>
+                                    <label for="check1">ה3</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="E4" checked>
+                                    <label for="check1">ה4</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="E5" checked>
+                                    <label for="check1">ה5</label>
+                                </div>
+                            </td>
+                            <!--<td><input type="checkbox" name="chk_group" value="E4">ה4</td>
+                            <td><input type="checkbox" name="chk_group" value="E5">ה5</td>-->
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="F1" checked>
+                                    <label for="check1">ו1</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="F2" checked>
+                                    <label for="check1">ו2</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="F3" checked>
+                                    <label for="check1">ו3</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="F4" checked>
+                                    <label for="check1">ו4</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="myCheckbox">
+                                    <input type="checkbox" name="chk_group" id="check1" value="F5" checked>
+                                    <label for="check1">ו5</label>
+                                </div>
+                            </td>
+                            <!--<td><input type="checkbox" name="chk_group" value="F4">ו4</td>
+                            <td><input type="checkbox" name="chk_group" value="F5">ו5</td>-->
+                        </tr>
+                    </table>
+                    <br>
+                    <input class="button" type="submit" value="שליחה">
+                    <input type="hidden" name="school" value="demo"/>
+
+                    <br><br>
+
+                </form>
+
+                <script type="text/javascript">
+                    var checkflag = "true";
+                    function check(field) {
+                        if (checkflag == "false") {
+                            for (i = 0; i < field.length; i++) {
+                                field[i].checked = true;
+                            }
+                        checkflag = "true";
+                        return;
+                        } else {
+                            for (i = 0; i < field.length; i++) {
+                                field[i].checked = false;
+                            }
+                            checkflag = "false";
+                            return;
+                        }
+                    }
+                </script>
+
+                <br>
+                <p>מספר לחיצות על הודעה <%= clicked_messages %></p>
+				<p>מספר הודעות שנשלחו <%= sent_messages %></p>
+                <p>מספר התקנות <%= installations %></p>
+                <br>
+
+            </form>
+
+        </div>
+
+    </div>
+    <div class="clear">&nbsp;</div>
+</div>
+<div id="footer">
+    <p>
+        <a href="http://www.bryantsmith.com/template">xhtml template</a> by <a href="http://www.bryantsmith.com">web page designer</a></p>
+</div>
+
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "global": {
+    "parseVersion": "1.4.2"
+  },
+  "applications": {
+    "_default": {
+      "link": "bnotified.demo"
+    },
+    "bnotified.demo": {
+      "applicationId": "1cch8PcCjyXkutM64AEU7bB72ssn3tFV4dyg8tLM",
+      "masterKey": "n7g23k4gAqTg7pTULIjDVl0ctoWazXuKpyjf9Ari"
+    }
+  }
+}
